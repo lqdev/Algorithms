@@ -19,7 +19,7 @@ namespace unionfind
                     return "https://algs4.cs.princeton.edu/15uf/tinyUF.txt";
                 default:
                     Console.WriteLine("No File");
-                    return "https://algs4.cs.princeton.edu/15uf/tinyUF.txt";
+                    return "tinyUF.txt";
             }
         }
 
@@ -29,7 +29,8 @@ namespace unionfind
 
             String fileurl = selectInput(args[0]);
 
-            StreamReader s = URLStream(fileurl);
+            //StreamReader s = URLStream(fileurl);
+            StreamReader s = new StreamReader(@"tinyUF.txt");
             String u = s.ReadLine();
 
             QuickFindUF uf = new QuickFindUF(int.Parse(u));
