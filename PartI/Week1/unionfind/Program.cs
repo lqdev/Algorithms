@@ -18,7 +18,7 @@ namespace unionfind
                 case "1":
                     return "https://algs4.cs.princeton.edu/15uf/tinyUF.txt";
                 default:
-                    Console.WriteLine("No File");
+                    Console.WriteLine("Using Local File");
                     return "tinyUF.txt";
             }
         }
@@ -26,15 +26,22 @@ namespace unionfind
         static void Main(string[] args)
         {
             String line;
+            StreamReader s;
+            String fileurl = selectInput(args[1]);
 
-            String fileurl = selectInput(args[0]);
-
-            //StreamReader s = URLStream(fileurl);
-            StreamReader s = new StreamReader(@"tinyUF.txt");
+            if(args[0].Equals("local"))
+            {
+                s = new StreamReader(fileurl);
+            } 
+            else 
+            {
+                s = URLStream(fileurl);
+            }
+            
             String u = s.ReadLine();
 
-            QuickFindUF uf = new QuickFindUF(int.Parse(u));
-
+            //QuickFindUF uf = new QuickFindUF(int.Parse(u));
+            QuickUnionUF uf = new QuickUnionUF(int.Parse(u));
             while((line = s.ReadLine()) != null) {
                 string[] x = line.Split(" ");
                 
