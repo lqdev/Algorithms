@@ -6,11 +6,30 @@ namespace unionfind
 {
     class Program
     {
+
+        static StreamReader URLStream(string fileurl){
+            return new StreamReader(new HttpClient().GetStreamAsync(fileurl).Result);
+        }
         
+        static string selectInput(string s)
+        {
+            switch (s)
+            {
+                case "1":
+                    return "https://algs4.cs.princeton.edu/15uf/tinyUF.txt";
+                default:
+                    Console.WriteLine("No File");
+                    return "https://algs4.cs.princeton.edu/15uf/tinyUF.txt";
+            }
+        }
+
         static void Main(string[] args)
         {
             String line;
-            StreamReader s = new StreamReader(args[0]);
+
+            String fileurl = selectInput(args[0]);
+
+            StreamReader s = URLStream(fileurl);
             String u = s.ReadLine();
 
             QuickFindUF uf = new QuickFindUF(int.Parse(u));
