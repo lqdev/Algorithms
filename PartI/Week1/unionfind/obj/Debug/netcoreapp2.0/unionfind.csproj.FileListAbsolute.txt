@@ -1,0 +1,10 @@
+/Users/luisquintanilla/Documents/Development/DOTNET/Algorithms/PartI/Week1/unionfind/bin/Debug/netcoreapp2.0/unionfind.deps.json
+/Users/luisquintanilla/Documents/Development/DOTNET/Algorithms/PartI/Week1/unionfind/bin/Debug/netcoreapp2.0/unionfind.runtimeconfig.json
+/Users/luisquintanilla/Documents/Development/DOTNET/Algorithms/PartI/Week1/unionfind/bin/Debug/netcoreapp2.0/unionfind.runtimeconfig.dev.json
+/Users/luisquintanilla/Documents/Development/DOTNET/Algorithms/PartI/Week1/unionfind/bin/Debug/netcoreapp2.0/unionfind.dll
+/Users/luisquintanilla/Documents/Development/DOTNET/Algorithms/PartI/Week1/unionfind/bin/Debug/netcoreapp2.0/unionfind.pdb
+/Users/luisquintanilla/Documents/Development/DOTNET/Algorithms/PartI/Week1/unionfind/obj/Debug/netcoreapp2.0/unionfind.csproj.CoreCompileInputs.cache
+/Users/luisquintanilla/Documents/Development/DOTNET/Algorithms/PartI/Week1/unionfind/obj/Debug/netcoreapp2.0/unionfind.AssemblyInfoInputs.cache
+/Users/luisquintanilla/Documents/Development/DOTNET/Algorithms/PartI/Week1/unionfind/obj/Debug/netcoreapp2.0/unionfind.AssemblyInfo.cs
+/Users/luisquintanilla/Documents/Development/DOTNET/Algorithms/PartI/Week1/unionfind/obj/Debug/netcoreapp2.0/unionfind.dll
+/Users/luisquintanilla/Documents/Development/DOTNET/Algorithms/PartI/Week1/unionfind/obj/Debug/netcoreapp2.0/unionfind.pdb
