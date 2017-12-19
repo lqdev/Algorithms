@@ -41,7 +41,8 @@ namespace unionfind
             String u = s.ReadLine();
 
             //QuickFindUF uf = new QuickFindUF(int.Parse(u));
-            QuickUnionUF uf = new QuickUnionUF(int.Parse(u));
+            //QuickUnionUF uf = new QuickUnionUF(int.Parse(u));
+            WeightedQuickUnionUF uf = new WeightedQuickUnionUF(int.Parse(u));
             while((line = s.ReadLine()) != null) {
                 string[] x = line.Split(" ");
                 
