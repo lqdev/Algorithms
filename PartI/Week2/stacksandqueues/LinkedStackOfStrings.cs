@@ -5,13 +5,19 @@ namespace stacksandqueues
     public class LinkedStackOfStrings
     {
         
+        private Node first;
+        private int count;
+
         private class Node {
-                public String item;
-                public Node next;
+            public String item;
+            public Node next;
         }
 
-        private Node first = null;
-        private int count = 0;
+        public LinkedStackOfStrings()
+        {
+            first = null;
+            count = 0;
+        }
 
         public bool isEmpty()
         {
@@ -31,8 +37,9 @@ namespace stacksandqueues
         {
             String item = first.item;
             first = first.next;
-            return item;
             count--;
+            return item;
+            
         }
 
         public int size()

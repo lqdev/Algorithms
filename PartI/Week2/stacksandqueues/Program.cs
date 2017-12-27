@@ -13,24 +13,28 @@ namespace stacksandqueues
 
         static void Main(string[] args)
         {
-            LinkedStackOfStrings ls = new LinkedStackOfStrings();
-
+            //LinkedStackOfStrings ls = new LinkedStackOfStrings();
+            //FixedCapacityOfStrings ls = new FixedCapacityOfStrings(5);
+            //ResizingArrayStackOfStrings ls = new ResizingArrayStackOfStrings();
+            LinkedQueueOfStrings ls = new LinkedQueueOfStrings();
             String line;
             String[] words;
             StreamReader s = new StreamReader(@"tobe.txt");
+            
             
             while((line = s.ReadLine()) != null) 
             {
                 words = line.Split(' ');
                 foreach (var word in words)
                 {
-                    if(!word.Equals("-")) {ls.push(word);}
+                    if(!word.Equals("-")) {
+                        //ls.push(word);
+                        ls.enqueue(word);
+                    } else {
+                        //Console.Write(ls.pop() + " ");
+                        Console.Write(ls.dequeue() + " ");
+                    }
                 }
-            }
-
-            while(!ls.isEmpty())
-            {
-                Console.WriteLine(ls.pop());
             }
         }
     }
