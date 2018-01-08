@@ -16,7 +16,8 @@ namespace stacksandqueues
             //LinkedStackOfStrings ls = new LinkedStackOfStrings();
             //FixedCapacityOfStrings ls = new FixedCapacityOfStrings(5);
             //ResizingArrayStackOfStrings ls = new ResizingArrayStackOfStrings();
-            LinkedQueueOfStrings ls = new LinkedQueueOfStrings();
+            //LinkedQueueOfStrings ls = new LinkedQueueOfStrings();
+            GenericLinkedList<String> ls = new GenericLinkedList<String>();
             String line;
             String[] words;
             StreamReader s = new StreamReader(@"tobe.txt");
@@ -28,11 +29,11 @@ namespace stacksandqueues
                 foreach (var word in words)
                 {
                     if(!word.Equals("-")) {
-                        //ls.push(word);
-                        ls.enqueue(word);
+                        ls.push(word);
+                        //ls.enqueue(word);
                     } else {
-                        //Console.Write(ls.pop() + " ");
-                        Console.Write(ls.dequeue() + " ");
+                        Console.Write(ls.pop() + " ");
+                        //Console.Write(ls.dequeue() + " ");
                     }
                 }
             }
