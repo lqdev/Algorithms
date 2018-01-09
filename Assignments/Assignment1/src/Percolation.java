@@ -8,7 +8,6 @@ public class Percolation {
     
     public boolean[][] _grid;
     private int _dimensions;
-    private boolean _percolates;
     private int _numberOfOpenSites;
     private WeightedQuickUnionUF _uf;
     private int _topNode;
