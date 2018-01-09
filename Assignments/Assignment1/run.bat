@@ -1,0 +1,1 @@
+java -cp lib\algs4.jar;build Percolation
