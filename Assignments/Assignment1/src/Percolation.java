@@ -100,9 +100,6 @@ public class Percolation {
             System.out.println(p.isOpen(1,2));
             p.open(1,2);
             System.out.println(p.isOpen(1,2));
-            
-            
-
         }catch(Exception e) {
             System.out.println(e.getMessage());
         }    
